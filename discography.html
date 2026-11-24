@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DISCOGRAPHY | TAISEI OFFICIAL SITE</title>
+<style>
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #222222;
+  font-family: sans-serif;
+}
+header {
+  padding: 30px 20px;
+  text-align: center;
+  color: #3469a9;
+  position: relative;
+}
+.logo {
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 8px;
+}
+.subtitle {
+  font-size: 10px;
+  letter-spacing: 4px;
+}
+.menu {
+  position: absolute;
+  right: 20px;
+  top: 35px;
+  font-size: 25px;
+  color: #3469a9;
+  background: none;
+  border: none;
+}
+nav {
+  display: none;
+  background: #f0f6fc;
+  text-align: center;
+  padding: 20px;
+}
+nav a {
+  display: block;
+  padding: 15px;
+  color: #3469a9;
+  text-decoration: none;
+}
+main {
+  max-width: 900px;
+  min-height: 60vh;
+  margin: auto;
+  padding: 40px 25px;
+}
+h1 {
+  text-align: center;
+  color: #3469a9;
+  font-size: clamp(22px, 6vw, 32px);
+  font-weight: 300;
+  letter-spacing: 4px;
+  margin-bottom: 45px;
+}
+.releases {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.release {
+  text-decoration: none;
+  color: #222222;
+}
+.jacket {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+.type {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 5px 8px;
+  background: #f0f6fc;
+  color: #3469a9;
+  font-size: 10px;
+}
+.date {
+  color: #777777;
+  font-size: 12px;
+  margin-top: 10px;
+}
+h2 {
+  font-size: 17px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+.artist {
+  color: #777777;
+  font-size: 12px;
+}
+.detail {
+  color: #3469a9;
+  font-size: 11px;
+  margin-top: 20px;
+}
+.back {
+  display: block;
+  text-align: center;
+  margin: 60px 0 20px;
+  color: #3469a9;
+  text-decoration: none;
+  font-size: 13px;
+}
+footer {
+  background: #f0f6fc;
+  color: #3469a9;
+  text-align: center;
+  padding: 35px;
+  font-size: 12px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">TAISEI</div>
+  <div class="subtitle">OFFICIAL SITE</div>
+  <button class="menu" aria-label="メニュー" onclick="toggleMenu()">☰</button>
+</header>
+
+<nav id="nav">
+  <a href="index.html">HOME</a>
+  <a href="news.html">NEWS</a>
+  <a href="profile.html">PROFILE</a>
+  <a href="discography.html">DISCOGRAPHY</a>
+  <a href="contact.html">CONTACT</a>
+</nav>
+
+<main>
+  <h1>DISCOGRAPHY</h1>
+
+  <div class="releases">
+
+    <a class="release" href="bloom.html">
+      <img class="jacket" src="bloom.jpeg" alt="未完成雑貨店">
+      <span class="type">Digital Single</span>
+      <div class="date">2026.07.14 RELEASE</div>
+      <h2>未完成雑貨店</h2>
+      <div class="artist">Bloom Journey</div>
+      <div class="detail">VIEW DETAIL →</div>
+    </a>
+
+    <a class="release" href="mirenai.html">
+      <img class="jacket" src="mirenai.jpeg" alt="未練愛">
+      <span class="type">Digital Single</span>
+      <div class="date">2024.12.31 RELEASE</div>
+      <h2>未練愛</h2>
+      <div class="artist">TAISEI</div>
+      <div class="detail">VIEW DETAIL →</div>
+    </a>
+
+  </div>
+
+  <a class="back" href="index.html">← BACK TO HOME</a>
+</main>
+
+<footer>
+  © 2026 TAISEI
+</footer>
+
+<script>
+function toggleMenu() {
+  const nav = document.getElementById("nav");
+  nav.style.display =
+    nav.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
