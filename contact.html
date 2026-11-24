@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CONTACT | TAISEI OFFICIAL SITE</title>
+<style>
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #222222;
+  font-family: sans-serif;
+}
+header {
+  padding: 30px 20px;
+  text-align: center;
+  color: #3469a9;
+  position: relative;
+}
+.logo {
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 8px;
+}
+.subtitle {
+  font-size: 10px;
+  letter-spacing: 4px;
+}
+.menu {
+  position: absolute;
+  right: 20px;
+  top: 35px;
+  font-size: 25px;
+  color: #3469a9;
+  background: none;
+  border: none;
+}
+nav {
+  display: none;
+  background: #f0f6fc;
+  text-align: center;
+  padding: 20px;
+}
+nav a {
+  display: block;
+  padding: 15px;
+  color: #3469a9;
+  text-decoration: none;
+}
+main {
+  max-width: 700px;
+  min-height: 60vh;
+  margin: auto;
+  padding: 40px 25px;
+  text-align: center;
+}
+h1 {
+  color: #3469a9;
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  margin-bottom: 50px;
+}
+p {
+  font-size: 14px;
+  line-height: 2.4;
+}
+.instagram {
+  display: block;
+  max-width: 350px;
+  margin: 40px auto 15px;
+  padding: 20px;
+  background: #3469a9;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.account {
+  color: #777777;
+  font-size: 13px;
+  text-decoration: none;
+}
+.note {
+  color: #777777;
+  font-size: 12px;
+  margin-top: 35px;
+}
+.back {
+  display: block;
+  text-align: center;
+  margin: 60px 0 20px;
+  color: #3469a9;
+  text-decoration: none;
+  font-size: 13px;
+}
+footer {
+  background: #f0f6fc;
+  color: #3469a9;
+  text-align: center;
+  padding: 35px;
+  font-size: 12px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">TAISEI</div>
+  <div class="subtitle">OFFICIAL SITE</div>
+  <button class="menu" aria-label="メニュー" onclick="toggleMenu()">☰</button>
+</header>
+
+<nav id="nav">
+  <a href="index.html">HOME</a>
+  <a href="news.html">NEWS</a>
+  <a href="profile.html">PROFILE</a>
+  <a href="discography.html">DISCOGRAPHY</a>
+  <a href="contact.html">CONTACT</a>
+</nav>
+
+<main>
+  <h1>CONTACT</h1>
+
+  <p>
+    出演依頼・楽曲制作依頼・その他のお問い合わせは、Instagramのダイレクトメッセージ（DM）にて受け付けております。
+  </p>
+
+  <a class="instagram" href="https://ig.me/m/taisei_bj" target="_blank" rel="noopener noreferrer">
+    Instagram DM ↗
+  </a>
+
+  <a class="account" href="https://www.instagram.com/taisei_bj/" target="_blank" rel="noopener noreferrer">
+    @taisei_bj
+  </a>
+
+  <p class="note">
+    ※お問い合わせ内容によっては、返信までにお時間をいただく場合がございます。
+  </p>
+
+  <a class="back" href="index.html">
+    ← BACK TO HOME
+  </a>
+</main>
+
+<footer>
+  © 2026 TAISEI
+</footer>
+
+<script>
+function toggleMenu() {
+  const nav = document.getElementById("nav");
+  nav.style.display =
+    nav.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
