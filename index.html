@@ -1,0 +1,131 @@
+ 
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TAISEI OFFICIAL SITE</title>
+<style>
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #222222;
+  font-family: sans-serif;
+}
+header {
+  padding: 30px 20px;
+  text-align: center;
+  color: #3469a9;
+  position: relative;
+}
+.logo {
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 8px;
+}
+.subtitle {
+  font-size: 10px;
+  letter-spacing: 4px;
+}
+.menu {
+  position: absolute;
+  right: 20px;
+  top: 35px;
+  font-size: 25px;
+  color: #3469a9;
+  background: none;
+  border: none;
+}
+nav {
+  display: none;
+  background: #f0f6fc;
+  text-align: center;
+  padding: 20px;
+}
+nav a {
+  display: block;
+  padding: 15px;
+  color: #3469a9;
+  text-decoration: none;
+}
+.hero {
+  padding: 20px;
+  text-align: center;
+}
+.hero img {
+  width: 100%;
+  max-width: 900px;
+}
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 35px 25px;
+}
+h2 {
+  color: #3469a9;
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+a {
+  color: #3469a9;
+}
+footer {
+  background: #f0f6fc;
+  color: #3469a9;
+  text-align: center;
+  padding: 35px;
+  font-size: 12px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">TAISEI</div>
+  <div class="subtitle">OFFICIAL SITE</div>
+  <button class="menu" aria-label="メニュー" onclick="toggleMenu()">☰</button>
+</header>
+
+<nav id="nav">
+  <a href="index.html">HOME</a>
+  <a href="news.html">NEWS</a>
+  <a href="profile.html">PROFILE</a>
+  <a href="discography.html">DISCOGRAPHY</a>
+  <a href="contact.html">CONTACT</a>
+</nav>
+
+<div class="hero">
+  <img src="artist.jpg" alt="TAISEI">
+</div>
+
+<section>
+  <h2>NEWS</h2>
+  <hr>
+  <p>TAISEI OFFICIAL SITE</p>
+  <p>公式サイト開設のお知らせ</p>
+  <hr>
+  <a href="news.html">VIEW ALL →</a>
+</section>
+
+<section>
+  <h2>DISCOGRAPHY</h2>
+  <hr>
+  <p>Digital Single</p>
+  <h3>未練愛</h3>
+  <a href="discography.html">VIEW ALL →</a>
+</section>
+
+<footer>
+  © 2026 TAISEI
+</footer>
+
+<script>
+function toggleMenu() {
+  const nav = document.getElementById("nav");
+  nav.style.display =
+    nav.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
