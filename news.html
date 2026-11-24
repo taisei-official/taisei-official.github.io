@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEWS | TAISEI OFFICIAL SITE</title>
+<style>
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #222222;
+  font-family: sans-serif;
+}
+header {
+  padding: 30px 20px;
+  text-align: center;
+  color: #3469a9;
+  position: relative;
+}
+.logo {
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 8px;
+}
+.subtitle {
+  font-size: 10px;
+  letter-spacing: 4px;
+}
+.menu {
+  position: absolute;
+  right: 20px;
+  top: 35px;
+  font-size: 25px;
+  color: #3469a9;
+  background: none;
+  border: none;
+}
+nav {
+  display: none;
+  background: #f0f6fc;
+  text-align: center;
+  padding: 20px;
+}
+nav a {
+  display: block;
+  padding: 15px;
+  color: #3469a9;
+  text-decoration: none;
+}
+main {
+  max-width: 900px;
+  min-height: 60vh;
+  margin: auto;
+  padding: 40px 25px;
+}
+h1 {
+  text-align: center;
+  color: #3469a9;
+  font-weight: 300;
+  letter-spacing: 8px;
+  margin-bottom: 50px;
+}
+article {
+  border-top: 1px solid #d6e4f2;
+  border-bottom: 1px solid #d6e4f2;
+  padding: 25px 0;
+}
+.date {
+  font-size: 12px;
+  color: #777777;
+}
+.category {
+  background: #f0f6fc;
+  color: #3469a9;
+  padding: 5px 10px;
+  font-size: 10px;
+  margin-left: 10px;
+}
+summary {
+  cursor: pointer;
+  line-height: 1.8;
+  padding-top: 15px;
+}
+details p {
+  font-size: 14px;
+  line-height: 2;
+}
+.back {
+  display: block;
+  text-align: center;
+  margin-top: 50px;
+  color: #3469a9;
+  text-decoration: none;
+  font-size: 13px;
+}
+footer {
+  background: #f0f6fc;
+  color: #3469a9;
+  text-align: center;
+  padding: 35px;
+  font-size: 12px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">TAISEI</div>
+  <div class="subtitle">OFFICIAL SITE</div>
+  <button class="menu" aria-label="メニュー" onclick="toggleMenu()">☰</button>
+</header>
+
+<nav id="nav">
+  <a href="index.html">HOME</a>
+  <a href="news.html">NEWS</a>
+  <a href="profile.html">PROFILE</a>
+  <a href="discography.html">DISCOGRAPHY</a>
+  <a href="contact.html">CONTACT</a>
+</nav>
+
+<main>
+  <h1>NEWS</h1>
+
+  <article>
+    <span class="date">2026.11.24</span>
+    <span class="category">INFORMATION</span>
+    <details>
+      <summary>
+        TAISEI OFFICIAL SITE 開設のお知らせ
+      </summary>
+      <p>
+        この度、TAISEI OFFICIAL SITEを開設いたしました。
+      </p>
+      <p>
+        今後、楽曲のリリース情報や活動に関する最新情報をこちらのサイトにてお知らせいたします。
+      </p>
+      <p>
+        今後ともTAISEIをよろしくお願いいたします。
+      </p>
+    </details>
+  </article>
+
+  <a class="back" href="index.html">← BACK TO HOME</a>
+</main>
+
+<footer>
+  © 2026 TAISEI
+</footer>
+
+<script>
+function toggleMenu() {
+  const nav = document.getElementById("nav");
+  nav.style.display =
+    nav.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
