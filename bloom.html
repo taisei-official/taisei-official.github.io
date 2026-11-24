@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>未完成雑貨店 | TAISEI OFFICIAL SITE</title>
+<style>
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #222222;
+  font-family: sans-serif;
+}
+header {
+  padding: 30px 20px;
+  text-align: center;
+  color: #3469a9;
+  position: relative;
+}
+.logo {
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 8px;
+}
+.subtitle {
+  font-size: 10px;
+  letter-spacing: 4px;
+}
+.menu {
+  position: absolute;
+  right: 20px;
+  top: 35px;
+  font-size: 25px;
+  color: #3469a9;
+  background: none;
+  border: none;
+}
+nav {
+  display: none;
+  background: #f0f6fc;
+  text-align: center;
+  padding: 20px;
+}
+nav a {
+  display: block;
+  padding: 15px;
+  color: #3469a9;
+  text-decoration: none;
+}
+main {
+  max-width: 700px;
+  margin: auto;
+  padding: 40px 25px;
+}
+.page-title {
+  text-align: center;
+  color: #3469a9;
+  font-size: 25px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  margin-bottom: 40px;
+}
+.jacket {
+  display: block;
+  width: 100%;
+  max-width: 450px;
+  margin: auto;
+}
+.info {
+  text-align: center;
+  margin-top: 30px;
+}
+.type {
+  display: inline-block;
+  background: #f0f6fc;
+  color: #3469a9;
+  padding: 6px 12px;
+  font-size: 11px;
+}
+h1 {
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+.artist {
+  color: #777777;
+  font-size: 15px;
+}
+.date {
+  color: #777777;
+  font-size: 12px;
+  margin-top: 15px;
+}
+section {
+  margin-top: 45px;
+}
+h2 {
+  color: #3469a9;
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 3px;
+  border-bottom: 1px solid #d6e4f2;
+  padding-bottom: 15px;
+}
+p {
+  font-size: 14px;
+  line-height: 2.2;
+}
+.track {
+  padding: 15px 0;
+  border-bottom: 1px solid #d6e4f2;
+  font-size: 14px;
+}
+.streaming {
+  display: block;
+  text-align: center;
+  background: #3469a9;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 18px;
+  margin-top: 30px;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+.back {
+  display: block;
+  text-align: center;
+  margin: 60px 0 20px;
+  color: #3469a9;
+  text-decoration: none;
+  font-size: 13px;
+}
+footer {
+  background: #f0f6fc;
+  color: #3469a9;
+  text-align: center;
+  padding: 35px;
+  font-size: 12px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">TAISEI</div>
+  <div class="subtitle">OFFICIAL SITE</div>
+  <button class="menu" aria-label="メニュー" onclick="toggleMenu()">☰</button>
+</header>
+
+<nav id="nav">
+  <a href="index.html">HOME</a>
+  <a href="news.html">NEWS</a>
+  <a href="profile.html">PROFILE</a>
+  <a href="discography.html">DISCOGRAPHY</a>
+  <a href="contact.html">CONTACT</a>
+</nav>
+
+<main>
+  <div class="page-title">DISCOGRAPHY</div>
+
+  <img class="jacket" src="bloom.jpeg" alt="未完成雑貨店">
+
+  <div class="info">
+    <span class="type">1st Digital Single</span>
+    <h1>未完成雑貨店</h1>
+    <div class="artist">Bloom Journey</div>
+    <div class="date">2026.07.14 RELEASE</div>
+  </div>
+
+  <section>
+    <h2>TRACK LIST</h2>
+    <div class="track">01. 未完成雑貨店</div>
+  </section>
+
+  <section>
+    <h2>ABOUT</h2>
+    <p>
+      Bloom Journeyの1stシングル。
+    </p>
+    <p>
+      当時のメンバーであるNAOYAがBloom Journeyのために書き下ろした未完成の楽曲を、TAISEIがその想いと色を大切にしながら完成させた作品。
+    </p>
+    <p>
+      TAISEIのソロプロジェクトとして再始動したBloom Journeyの、新たな一歩となる楽曲。
+    </p>
+  </section>
+
+  <section>
+    <h2>STREAMING / DOWNLOAD</h2>
+    <a class="streaming" href="https://linkco.re/r6Sgh4Gp" target="_blank" rel="noopener noreferrer">
+      配信リンク ↗
+    </a>
+  </section>
+
+  <a class="back" href="discography.html">
+    ← BACK TO DISCOGRAPHY
+  </a>
+</main>
+
+<footer>
+  © 2026 TAISEI
+</footer>
+
+<script>
+function toggleMenu() {
+  const nav = document.getElementById("nav");
+  nav.style.display =
+    nav.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
