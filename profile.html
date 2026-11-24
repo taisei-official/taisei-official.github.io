@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PROFILE | TAISEI OFFICIAL SITE</title>
+<style>
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #222222;
+  font-family: sans-serif;
+}
+header {
+  padding: 30px 20px;
+  text-align: center;
+  color: #3469a9;
+  position: relative;
+}
+.logo {
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 8px;
+}
+.subtitle {
+  font-size: 10px;
+  letter-spacing: 4px;
+}
+.menu {
+  position: absolute;
+  right: 20px;
+  top: 35px;
+  font-size: 25px;
+  color: #3469a9;
+  background: none;
+  border: none;
+}
+nav {
+  display: none;
+  background: #f0f6fc;
+  text-align: center;
+  padding: 20px;
+}
+nav a {
+  display: block;
+  padding: 15px;
+  color: #3469a9;
+  text-decoration: none;
+}
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 25px;
+}
+h1 {
+  text-align: center;
+  color: #3469a9;
+  font-weight: 300;
+  letter-spacing: 8px;
+  margin-bottom: 40px;
+}
+.artist {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+.name {
+  color: #3469a9;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 6px;
+  margin-bottom: 5px;
+}
+.role {
+  color: #777777;
+  font-size: 13px;
+}
+p {
+  font-size: 14px;
+  line-height: 2.2;
+}
+section {
+  margin-top: 50px;
+}
+h2 {
+  color: #3469a9;
+  font-weight: 300;
+  letter-spacing: 4px;
+  border-bottom: 1px solid #d6e4f2;
+  padding-bottom: 15px;
+}
+.history {
+  border-bottom: 1px solid #d6e4f2;
+  padding: 20px 0;
+}
+.date {
+  color: #3469a9;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.back {
+  display: block;
+  text-align: center;
+  margin: 50px 0 20px;
+  color: #3469a9;
+  text-decoration: none;
+  font-size: 13px;
+}
+footer {
+  background: #f0f6fc;
+  color: #3469a9;
+  text-align: center;
+  padding: 35px;
+  font-size: 12px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">TAISEI</div>
+  <div class="subtitle">OFFICIAL SITE</div>
+  <button class="menu" aria-label="メニュー" onclick="toggleMenu()">☰</button>
+</header>
+
+<nav id="nav">
+  <a href="index.html">HOME</a>
+  <a href="news.html">NEWS</a>
+  <a href="profile.html">PROFILE</a>
+  <a href="discography.html">DISCOGRAPHY</a>
+  <a href="contact.html">CONTACT</a>
+</nav>
+
+<main>
+  <h1>PROFILE</h1>
+
+  <img class="artist" src="artist.jpeg" alt="TAISEI">
+
+  <div class="name">TAISEI</div>
+  <div class="role">Singer-songwriter</div>
+
+  <p>
+    大阪府出身のシンガーソングライター。
+    日常の中にある感情や恋愛、人との出会いや別れをテーマに、作詞・作曲を手掛ける。
+  </p>
+
+  <section>
+    <h2>BIOGRAPHY</h2>
+
+    <div class="history">
+      <span class="date">2022.09.03</span>
+      <p>
+        2人組ユニット【Bloom Journey】のGt.Voとして活動開始。
+      </p>
+    </div>
+
+    <div class="history">
+      <span class="date">2024.09.15</span>
+      <p>
+        【Bloom Journey】活動休止。
+      </p>
+    </div>
+
+    <div class="history">
+      <span class="date">2024.12.31</span>
+      <p>
+        ソロ活動名義【TAISEI】として、1stシングル「未恋愛」をリリース。
+      </p>
+    </div>
+
+    <div class="history">
+      <span class="date">2025.09.03</span>
+      <p>
+        【Bloom Journey】のメンバー【NAOYA】が脱退。
+      </p>
+    </div>
+
+    <div class="history">
+      <span class="date">2026.07.14</span>
+      <p>
+        【Bloom Journey】が【TAISEI】のソロプロジェクトとして再始動。<br>
+        それと同時に【Bloom Journey】の名義で、1stシングル「未完成雑貨店」をリリース。
+      </p>
+    </div>
+
+  </section>
+
+  <a class="back" href="index.html">← BACK TO HOME</a>
+</main>
+
+<footer>
+  © 2026 TAISEI
+</footer>
+
+<script>
+function toggleMenu() {
+  const nav = document.getElementById("nav");
+  nav.style.display =
+    nav.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
