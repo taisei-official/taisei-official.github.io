@@ -1,11 +1,17 @@
- 
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TAISEI OFFICIAL SITE</title>
+<meta name="description" content="シンガーソングライターTAISEIの公式サイト。最新情報、プロフィール、楽曲情報などを掲載。">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 <style>
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   background: #ffffff;
@@ -35,6 +41,7 @@ header {
   color: #3469a9;
   background: none;
   border: none;
+  cursor: pointer;
 }
 nav {
   display: none;
@@ -42,88 +49,262 @@ nav {
   text-align: center;
   padding: 20px;
 }
-nav a {
+nav .nav-link {
   display: block;
   padding: 15px;
   color: #3469a9;
   text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+.sns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  padding: 25px 0;
+}
+.sns a {
+  color: #3469a9;
+  font-size: 23px;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+.sns a:hover {
+  opacity: 0.5;
 }
 .hero {
-  padding: 20px;
-  text-align: center;
+  max-width: 1000px;
+  margin: auto;
 }
 .hero img {
+  display: block;
   width: 100%;
-  max-width: 900px;
+  height: auto;
 }
-section {
+main {
   max-width: 900px;
   margin: auto;
-  padding: 35px 25px;
+  padding: 0 25px;
 }
-h2 {
+section {
+  padding: 55px 0;
+}
+.section-title {
+  text-align: center;
   color: #3469a9;
+  font-size: 27px;
   font-weight: 300;
-  letter-spacing: 4px;
+  letter-spacing: 5px;
+  margin: 0 0 35px;
 }
-a {
+.news-item {
+  display: block;
+  padding: 20px 0;
+  border-bottom: 1px solid #d6e4f2;
+  text-decoration: none;
+  color: #222222;
+}
+.news-date {
+  font-size: 12px;
   color: #3469a9;
+  margin-bottom: 12px;
+}
+.news-text {
+  font-size: 14px;
+  line-height: 1.8;
+}
+.releases {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.release {
+  text-decoration: none;
+  color: #222222;
+}
+.jacket {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+.type {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 5px 8px;
+  background: #f0f6fc;
+  color: #3469a9;
+  font-size: 10px;
+}
+.date {
+  color: #777777;
+  font-size: 11px;
+  margin-top: 10px;
+}
+.release h3 {
+  font-size: 17px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+.artist {
+  color: #777777;
+  font-size: 12px;
+}
+.more {
+  display: block;
+  width: 220px;
+  max-width: 100%;
+  margin: 35px auto 0;
+  padding: 15px;
+  border: 1px solid #3469a9;
+  color: #3469a9;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 2px;
 }
 footer {
   background: #f0f6fc;
   color: #3469a9;
   text-align: center;
-  padding: 35px;
-  font-size: 12px;
+  padding: 25px 20px 35px;
+}
+.copyright {
+  font-size: 11px;
+  letter-spacing: 1px;
+  margin-top: 10px;
 }
 </style>
 </head>
+
 <body>
 
 <header>
   <div class="logo">TAISEI</div>
   <div class="subtitle">OFFICIAL SITE</div>
-  <button class="menu" aria-label="メニュー" onclick="toggleMenu()">☰</button>
+  <button class="menu" aria-label="メニュー" aria-expanded="false" onclick="toggleMenu()">☰</button>
 </header>
 
 <nav id="nav">
-  <a href="index.html">HOME</a>
-  <a href="news.html">NEWS</a>
-  <a href="profile.html">PROFILE</a>
-  <a href="discography.html">DISCOGRAPHY</a>
-  <a href="contact.html">CONTACT</a>
+
+  <a class="nav-link" href="index.html">HOME</a>
+  <a class="nav-link" href="news.html">NEWS</a>
+  <a class="nav-link" href="profile.html">PROFILE</a>
+  <a class="nav-link" href="discography.html">DISCOGRAPHY</a>
+  <a class="nav-link" href="contact.html">CONTACT</a>
+
+  <div class="sns">
+
+    <a href="https://www.instagram.com/taisei_bj/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a href="https://x.com/taise1__" target="_blank" rel="noopener noreferrer" aria-label="X">
+      <i class="fa-brands fa-x-twitter"></i>
+    </a>
+
+    <a href="https://www.tiktok.com/@taisei_bj" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+      <i class="fa-brands fa-tiktok"></i>
+    </a>
+
+    <a href="https://youtube.com/@taisei_from_bloom.journey" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+      <i class="fa-brands fa-youtube"></i>
+    </a>
+
+  </div>
+
 </nav>
 
 <div class="hero">
   <img src="artist.jpeg" alt="TAISEI">
 </div>
 
-<section>
-  <h2>NEWS</h2>
-  <hr>
-  <p>TAISEI OFFICIAL SITE</p>
-  <p>公式サイト開設のお知らせ</p>
-  <hr>
-  <a href="news.html">VIEW ALL →</a>
-</section>
+<main>
 
-<section>
-  <h2>DISCOGRAPHY</h2>
-  <hr>
-  <p>Digital Single</p>
-  <h3>未練愛</h3>
-  <a href="discography.html">VIEW ALL →</a>
-</section>
+  <section>
+
+    <h2 class="section-title">NEWS</h2>
+
+    <a class="news-item" href="news.html">
+      <div class="news-date">2026.11.24</div>
+      <div class="news-text">TAISEI OFFICIAL SITE 開設のお知らせ</div>
+    </a>
+
+    <a class="more" href="news.html">
+      VIEW MORE →
+    </a>
+
+  </section>
+
+  <section>
+
+    <h2 class="section-title">DISCOGRAPHY</h2>
+
+    <div class="releases">
+
+      <a class="release" href="bloom.html">
+        <img class="jacket" src="bloom.jpeg" alt="未完成雑貨店">
+        <span class="type">1st Digital Single</span>
+        <div class="date">2026.07.14 RELEASE</div>
+        <h3>未完成雑貨店</h3>
+        <div class="artist">Bloom Journey</div>
+      </a>
+
+      <a class="release" href="mirenai.html">
+        <img class="jacket" src="mirenai.jpeg" alt="未練愛">
+        <span class="type">1st Digital Single</span>
+        <div class="date">2024.12.31 RELEASE</div>
+        <h3>未練愛</h3>
+        <div class="artist">TAISEI</div>
+      </a>
+
+    </div>
+
+    <a class="more" href="discography.html">
+      VIEW MORE →
+    </a>
+
+  </section>
+
+</main>
 
 <footer>
-  © 2026 TAISEI
+
+  <div class="sns">
+
+    <a href="https://www.instagram.com/taisei_bj/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a href="https://x.com/taise1__" target="_blank" rel="noopener noreferrer" aria-label="X">
+      <i class="fa-brands fa-x-twitter"></i>
+    </a>
+
+    <a href="https://www.tiktok.com/@taisei_bj" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+      <i class="fa-brands fa-tiktok"></i>
+    </a>
+
+    <a href="https://youtube.com/@taisei_from_bloom.journey" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+      <i class="fa-brands fa-youtube"></i>
+    </a>
+
+  </div>
+
+  <div class="copyright">
+    © 2026 TAISEI
+  </div>
+
 </footer>
 
 <script>
 function toggleMenu() {
   const nav = document.getElementById("nav");
-  nav.style.display =
-    nav.style.display === "block" ? "none" : "block";
+  const button = document.querySelector(".menu");
+  const isOpen = nav.style.display === "block";
+  nav.style.display = isOpen ? "none" : "block";
+  button.textContent = isOpen ? "☰" : "×";
+  button.setAttribute("aria-expanded", String(!isOpen));
 }
 </script>
 
